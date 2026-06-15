@@ -44,9 +44,19 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+collected 9 items                                                                                                                         
+
+tests/test_game_logic.py::test_check_guess_too_high PASSED                                                                          [ 11%]
+tests/test_game_logic.py::test_check_guess_too_low PASSED                                                                           [ 22%]
+tests/test_game_logic.py::test_check_guess_correct PASSED                                                                           [ 33%]
+tests/test_game_logic.py::test_parse_guess_negative_number PASSED                                                                   [ 44%]
+tests/test_game_logic.py::test_parse_guess_non_numeric PASSED                                                                       [ 55%]
+tests/test_game_logic.py::test_parse_guess_above_range PASSED                                                                       [ 66%]
+tests/test_game_logic.py::test_parse_guess_decimal_in_range PASSED                                                                  [ 77%]
+tests/test_game_logic.py::test_parse_guess_empty_string PASSED                                                                      [ 88%]
+tests/test_game_logic.py::test_parse_guess_zero PASSED                                                                              [100%]
+
+=========================================================== 9 passed in 0.10s ============================================================
 ```
 
 ## 🚀 Stretch Features
