@@ -30,14 +30,14 @@ def parse_guess(raw: str):
 
 
 def check_guess(guess, secret):
+    # FIXME: Logic breaks here - hints are inverted!
     if guess == secret:
         return "Win", "🎉 Correct!"
-
     try:
         if guess > secret:
-            return "Too High", "📈 Go HIGHER!"
+            return "Too High", "📈 Go HIGHER!"  # BUG: Should say "Go LOWER!"
         else:
-            return "Too Low", "📉 Go LOWER!"
+            return "Too Low", "📉 Go LOWER!"    # BUG: Should say "Go HIGHER!"
     except TypeError:
         g = str(guess)
         if g == secret:
@@ -156,6 +156,7 @@ if submit:
         st.session_state.history.append(guess_int)
 
         if st.session_state.attempts % 2 == 0:
+            # FIXME: Type conversion breaks comparison logic!
             secret = str(st.session_state.secret)
         else:
             secret = st.session_state.secret
