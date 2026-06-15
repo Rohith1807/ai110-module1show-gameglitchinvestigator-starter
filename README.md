@@ -79,6 +79,7 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 - Player enters **150** → Rejected with "Please guess between 1 and 100."
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+this screenshot shows the logic error i fixed for the acceptance range.
 c:\Users\rohit\OneDrive - University of St. Thomas\Pictures\Screenshots\Screenshot 2026-06-15 145049.png
 
 ## 🧪 Test Results
